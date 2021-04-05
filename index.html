@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mbd/css/bootstrap.css">
+    <link rel="stylesheet" href="mbd/css/mdb.css">
+    <title>Typing Star </title>
+</head>
+
+<body>
+    <audio id="wrong-sound">
+        <source src="Wrong.mp3" type="audio/wav">
+    </audio>
+
+    <audio id="congrats-sound">
+        <source src="congratulation.mp3" type="audio/wav">
+    </audio>
+
+    <header class="main-header">
+        <h1>Typing Star App</h1>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 mt-3 col-lg-9 col-sm-12">
+                <div class="card t-card">
+                    <div class="card-body">
+                        <section class="text-section">
+                            <div class="text-section-div">
+                                <p id="original-text">Thanks for Learning UI Technologies.</p>
+                            </div>
+                        </section>
+
+                        <br>
+                        <section class="text-area-section">
+                            <div class="text-area-div">
+                                <textarea onpaste="return false" id="text-area" rows="4" cols="53"
+                                    placeholder="Start Typing..(The Timer starts when you starts typing..)"
+                                    class="col-md-9 col-sm-9"></textarea>
+                            </div>
+                        </section>
+
+                        <br>
+                        <section class="result-section">
+                            <div class="result-section-div">
+                                <div class="text-center">
+                                    <span class="timer">
+                                        <span id="minutes">00</span> :
+                                        <span id="seconds">00</span> :
+                                        <span id="m-seconds">00</span>
+                                    </span>
+                                </div>
+                                <div>
+                                    <button type="button" id="reset">Reset</button>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="cong-section">
+                            <div class="cong-section-div">
+                                <p>Congratulations !!</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-4 col-md-12 col-sm-12">
+                <button class="btn btn-primary mt-2 rounded-pill" onclick="changeText(0)">Lesson 1</button>
+                <button class="btn btn-success mt-2 rounded-pill" onclick="changeText(1)">Lesson 2</button>
+                <button class="btn btn-warning mt-2 rounded-pill" onclick="changeText(2)">Lesson 3</button>
+                <button class="btn btn-danger mt-2 rounded-pill" onclick="changeText(3)">Lesson 4</button>
+                <button class="btn btn-indigo mt-2 rounded-pill" onclick="changeText(4)">Lesson 5</button>
+                <button class="btn btn-pink mt-2 rounded-pill" onclick="changeText(5)">Lesson 6</button>
+                <button class="btn btn-purple mt-2 rounded-pill" onclick="changeText(6)">Lesson 7</button>
+                <button class="btn btn-secondary mt-2 rounded-pill" onclick="changeText(7)">Lesson 8</button>
+                <button class="btn btn-primary mt-2 rounded-pill" onclick="changeText(8)">Lesson 9</button>
+                <button class="btn btn-success mt-2 rounded-pill" onclick="changeText(9)">Lesson 10</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <h3>Copyright &copy; 2021</h3>
+        <p>All Rights Reserved</p>
+        <small>Developed & Maintained by <a href="https://abhijitpatra.netlify.app/" target="_blank">Abhijit</a></small>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
